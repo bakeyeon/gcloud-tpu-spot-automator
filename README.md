@@ -39,5 +39,8 @@ Simply run the Python script on your local machine:
 python tpu_automator.py
 ```
 
+## Acknowledgement
+Special thanks to Google TPU Research Cloud (TRC) for empowering my research projects with computational resources.
+
 ## License
 This project is licensed under the MIT License.
