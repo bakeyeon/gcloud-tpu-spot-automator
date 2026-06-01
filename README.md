@@ -21,6 +21,7 @@ This script requires the **Google Cloud CLI (SDK)** installed on your local mach
    ```bash
    gcloud auth login
    gcloud config set project YOUR_PROJECT_ID
+   ```
 
 ## Configuration
 You can easily customize the zone targets and hardware specifications in the ZONES_CONFIG block within the script:
@@ -30,11 +31,13 @@ ZONES_CONFIG = [
     {"zone": "europe-west4-a", **TPU_V6E_64,     "spot": True, "name": "auto-tpu-v6e-64-eu"},
     {"zone": "us-central1-a",  **TPU_V5_LITE_64, "spot": True, "name": "auto-tpu-v5lite-64"},
 ]
+```
 
 ## Usage
 Simply run the Python script on your local machine:
 ```Bash
 python tpu_automator.py
+```
 
 ## License
 This project is licensed under the MIT License.
