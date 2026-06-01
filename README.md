@@ -36,7 +36,7 @@ ZONES_CONFIG = [
 ## Usage
 Simply run the Python script on your local machine:
 ```Bash
-python tpu_automator.py
+python tpu_auto_run_public.py
 ```
 
 ## Acknowledgement
