@@ -4,6 +4,9 @@ A robust Python utility script designed for ML researchers to automate the orche
 
 This script continuously hunts for available **Spot TPU resources** across multiple zones, automatically provisions the hardware, and securely initializes the software environment without failing from silent SSH command truncation.
 
+> [!NOTE]
+> This script reflects the Cloud TPU setup at the time it was written. TPU types, zones, `gcloud` commands and library versions (for example `torch` / `torch_xla`) change often, so you may need to edit the configuration and setup steps before using it. Please check the [Cloud TPU documentation](https://cloud.google.com/tpu/docs) for the current options.
+
 ## Key Features
 * **Multi-Zone Spot Hunting:** Iterates through predefined zones and configurations to find available TPU slices (v4, v5e/v5lite, v6e) without manual monitoring.
 * **State Verification:** Automatically checks if a `READY` node already exists before attempting new creations to prevent redundant provisioning.
